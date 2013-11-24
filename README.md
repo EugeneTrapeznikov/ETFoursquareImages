@@ -3,7 +3,7 @@ ETFoursquareImages
 
 When you scroll, image's shown area will become bigger. Like it appears on places' page in Foursquare app.
 
-![example](http://s22.postimg.org/4o40edw3l/z_BEr_PEl83c.jpg)
+![example](https://raw.github.com/EugeneTrapeznikov/ETFoursquareImages/master/demo_source/demo.gif)
 
 Requirements
 ------------
