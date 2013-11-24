@@ -28,8 +28,6 @@
 
 -(void)setImages:(NSArray*)_imagesArray;
 
--(void)addSubviewToScroll:(UIView*)view;
-
 -(void)setImagesHeight:(int)_imagesHeight;
 
 @end

@@ -92,20 +92,6 @@
     scrollingKoef = 0.2*imagesHeight/80.0;
 }
 
--(void)addSubviewToScroll:(UIView *)view{
-    
-    CGRect viewFrame = view.frame;
-    viewFrame.origin.y += imagesHeight/2;
-    view.frame = viewFrame;
-    
-    [self.scrollView addSubview:view];
-    
-    if (view.frame.origin.y + view.frame.size.height> self.scrollView.contentSize.height){
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, view.frame.origin.y + view.frame.size.height);
-    }
-    
-}
-
 #pragma mark - Actions
 - (void)changePage:(UIPageControl *)pageControl {
     CGRect imagesFrame = imagesScrollView.frame;
