@@ -39,6 +39,14 @@ When you add subview or set scrollView's content size don't forget about images 
     
     foursquareImages.scrollView.contentSize = CGSizeMake(320, 110+imagesHeight);
 
+You can adapt scroll view, page control and and view below images (`bottomView`) throught this variables:
+
+    @property (nonatomic, strong) UIPageControl *pageControl;
+    @property (nonatomic) int pageControlHeight;
+
+    @property (nonatomic, strong) UIScrollView *scrollView;
+    @property (nonatomic, strong) UIView *bottomView;
+
 Example project included.
 
 License
