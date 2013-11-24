@@ -64,7 +64,7 @@
             [imageView setImage:image];
             [imagesScrollView addSubview:imageView];
         }
-        imagesScrollView.contentSize = CGSizeMake(_imagesArray.count * self.frame.size.width, self.frame.size.height);
+        imagesScrollView.contentSize = CGSizeMake(_imagesArray.count * self.frame.size.width, self.frame.size.width);
         [self.scrollView addSubview:imagesScrollView];
         
        // imagesHeight = 160 + 45 + dy;

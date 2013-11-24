@@ -402,7 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFoursquareImagesDemo/ETFoursquareImagesDemo-Prefix.pch";
 				INFOPLIST_FILE = "ETFoursquareImagesDemo/ETFoursquareImagesDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -417,7 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFoursquareImagesDemo/ETFoursquareImagesDemo-Prefix.pch";
 				INFOPLIST_FILE = "ETFoursquareImagesDemo/ETFoursquareImagesDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -485,6 +485,7 @@
 				522A77A6183E74BD00F6F2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		522A77A7183E74BD00F6F2BF /* Build configuration list for PBXNativeTarget "ETFoursquareImagesDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				522A77A9183E74BD00F6F2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
