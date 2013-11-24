@@ -15,13 +15,29 @@ Requirements
 How to use
 =======================
 
-Include the `ETActivityIndicatorView.h`, `ETActivityIndicatorView.m`, `Circle.h` and `Circle.m` in your project.
+`ETFoursquareImages` is a simple `UIScrollView` with images on the top of this `UIScrollView`.
 
-To display  `ETActivityIndicatorView`, simply do it like basic `UIActivityIndicatorView`:
+Include the `ETFoursquareImages.h` and `ETFoursquareImages.m` in your project.
 
-    ETActivityIndicatorView *etActivity = [[ETActivityIndicatorView alloc] initWithFrame:CGRectMake((10, 10, 60, 60)];
-    [etActivity startAnimating];
-    [self.view addSubview:etActivity];
+To display  `ETFoursquareImages`, simply do it like basic `UIVIew`'s `initWithFrame`:
+
+    ETFoursquareImages *foursquareImages = [[ETFoursquareImages alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
+    [self.view addSubview:foursquareImages];
+
+Then you should set images' height and images array. I recommend you to set image's height about 160 pixels:
+
+    int imagesHeight = 160;
+    [foursquareImages setImagesHeight:imagesHeight];
+    NSArray *images  = [NSArray arrayWithObjects:[UIImage imageNamed:@"horses"], [UIImage imageNamed:@"surfer"], [UIImage imageNamed:@"bridge"], nil];
+    [foursquareImages setImages:images];
+
+When you add subview or set scrollView's content size don't forget about images height.
+
+    UITextView *hintTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, imagesHeight+10, 320, 110)];
+    hintTextView.text = @"When you scroll, image's shown area will become bigger. Like it appears on place's page in Foursquare app.";
+    [foursquareImages.scrollView addSubview:hintTextView];
+    
+    foursquareImages.scrollView.contentSize = CGSizeMake(320, 110+imagesHeight);
 
 Example project included.
 
