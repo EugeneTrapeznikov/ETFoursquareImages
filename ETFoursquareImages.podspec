@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "Eugene" => "evgtrapeznikov@gmail.com" }
   s.social_media_url   = "http://ugin.co"
   s.platform     = :ios
+  s.requires_arc = true
   s.source       = { :git => "https://github.com/EugeneTrapeznikov/ETFoursquareImages.git", 
     :tag => "1.0" }
   s.source_files  = "ETFoursquareImages", "ETFoursquareImages/**/*.{h,m}"
