@@ -32,16 +32,16 @@
     
     int imagesHeight = 160;
     
-    ETFoursquareImages *foursquareImages = [[ETFoursquareImages alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height-0)];
+    ETFoursquareImages *foursquareImages = [[ETFoursquareImages alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
     [foursquareImages setImagesHeight:imagesHeight];
     
-    NSArray *images  = [NSArray arrayWithObjects:[UIImage imageNamed:@"horses"], [UIImage imageNamed:@"surfer"], [UIImage imageNamed:@"bridge"], nil];
+    NSArray *images  = @[UIImage imageNamed:@"horses"], [UIImage imageNamed:@"surfer"], [UIImage imageNamed:@"bridge"]];
     
     [foursquareImages setImages:images];
     
     [self.view addSubview:foursquareImages];
     
-    UITextView *hintTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0+imagesHeight, 320, 110)];
+    UITextView *hintTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, imagesHeight, 320, 110)];
     hintTextView.userInteractionEnabled = NO;
     hintTextView.text = @"When you scroll, image's shown area will become bigger. Like it appears on place's page in Foursquare app.";
     hintTextView.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20.0];
